@@ -1,13 +1,25 @@
 from selenium import webdriver
 
+from settings import CHROME_DRIVER
+
 
 class ChromeBrowser:
 
-    driver = webdriver.Chrome(r'C:\Users\Mariusz\IdeaProjects\PythonTestExercises3\Additional\Drivers\chromedriver.exe')
-    driver.maximize_window()
+    def __init__(self):
+        self.driver = webdriver.Chrome(CHROME_DRIVER)
+        self.set_up_window()
+
+    def set_up_window(self):
+        self.driver.maximize_window()
+
     # driver.implicitly_wait(30)
     # driver.set_page_load_timeout(30)
 
-
     def close(context):
         context.driver.close()
+
+
+class ChromeBrowserIphone(ChromeBrowser):
+
+    def set_up_window(self):
+        pass
