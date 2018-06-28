@@ -2,7 +2,6 @@ from Pages.BasePage import BasePage, Selector
 
 
 class HomePage(BasePage):
-
     picture_below_unique_and_clean = Selector("#post-9 > div > div:nth-child(1) > div > p:nth-child(1) > a > img")
     picture_below_customer_support = Selector("#post-9 > div > div:nth-child(2) > div > p:nth-child(1) > i > a > img")
     picture_below_very_flexible = Selector("#post-9 > div > div:nth-child(3) > div > i > a > img")
@@ -18,28 +17,28 @@ class HomePage(BasePage):
     content5_title = Selector("#tabs-5 > b")
 
     def open_demo_qa(self):
-        self.driver.get("http://demoqa.com/")
+        self._get_page("http://demoqa.com/")
 
     def click_picture_below_unique_and_clean(self):
-        self._find_element_and_click(self.picture_below_unique_and_clean)
+        self._click_element(self.picture_below_unique_and_clean)
 
     def click_picture_below_customer_support(self):
-        self._find_element_and_click(self.picture_below_customer_support)
+        self._click_element(self.picture_below_customer_support)
 
     def click_picture_below_very_flexible(self):
-        self._find_element_and_click(self.picture_below_very_flexible)
+        self._click_element(self.picture_below_very_flexible)
 
     def click_tab1_button(self):
-        self._find_element_and_click(self.tab1_button)
+        self._click_element(self.tab1_button)
 
     def click_tab2_button(self):
-        self._find_element_and_click(self.tab2_button)
+        self._click_element(self.tab2_button)
 
     def click_tab3_button(self):
-        self._find_element_and_click(self.tab3_button)
+        self._click_element(self.tab3_button)
 
     def click_tab4_button(self):
-        self._find_element_and_click(self.tab4_button)
+        self._click_element(self.tab4_button)
 
     def click_tab5_button(self):
-        self._find_element_and_click(self.tab5_button)
+        self._click_element(self.tab5_button)

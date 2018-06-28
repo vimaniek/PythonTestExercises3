@@ -15,8 +15,8 @@ class ChromeBrowser:
     # driver.implicitly_wait(30)
     # driver.set_page_load_timeout(30)
 
-    def close(context):
-        context.driver.close()
+    def close(self):
+        self.driver.close()
 
 
 class ChromeBrowserIphone(ChromeBrowser):

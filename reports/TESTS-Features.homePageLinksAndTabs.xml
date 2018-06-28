@@ -1,0 +1,105 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-N352V7D" name="Features.homePageLinksAndTabs.Home page links and tabs" skipped="0" tests="8" time="4.986858" timestamp="2018-06-28T10:03:15.150023"><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name="click on a picture below label -- @1.1 " status="passed" time="3.43977"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Regression
+  Scenario Outline: click on a picture below label -- @1.1 
+    Given I am on a http://demoqa.com/ page ... passed in 3.343s
+    When I click on a picture below "Unique & Clean" label ... passed in 0.097s
+    Then I will be redirect to http://demoqa.com/wp-content/uploads/2014/08/pattern-14.png page ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name="click on a picture below label -- @1.2 " status="passed" time="0.306047"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Regression
+  Scenario Outline: click on a picture below label -- @1.2 
+    Given I am on a http://demoqa.com/ page ... passed in 0.125s
+    When I click on a picture below "Customer Support" label ... passed in 0.180s
+    Then I will be redirect to http://demoqa.com/wp-content/uploads/2014/08/pattern-14.png page ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name="click on a picture below label -- @1.3 " status="passed" time="0.27763"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Regression
+  Scenario Outline: click on a picture below label -- @1.3 
+    Given I am on a http://demoqa.com/ page ... passed in 0.104s
+    When I click on a picture below "Very Flexible" label ... passed in 0.173s
+    Then I will be redirect to http://demoqa.com/wp-content/uploads/2014/08/pattern-14.png page ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name=" -- @1.1 " status="passed" time="0.280099"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @SmokeTest @BoomTest
+  Scenario Outline:  -- @1.1 
+    Given I am on a http://demoqa.com/ page ... passed in 0.133s
+    When I click on the "Tab 1" button ... passed in 0.147s
+    Then A sub-page opens with the title "Content 1 Title" ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name=" -- @1.2 " status="passed" time="0.179737"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @SmokeTest @BoomTest
+  Scenario Outline:  -- @1.2 
+    Given I am on a http://demoqa.com/ page ... passed in 0.105s
+    When I click on the "Tab 2" button ... passed in 0.074s
+    Then A sub-page opens with the title "Content 2 Title" ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name=" -- @1.3 " status="passed" time="0.14598"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @SmokeTest @BoomTest
+  Scenario Outline:  -- @1.3 
+    Given I am on a http://demoqa.com/ page ... passed in 0.092s
+    When I click on the "Tab 3" button ... passed in 0.054s
+    Then A sub-page opens with the title "Content 3 Title" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name=" -- @1.4 " status="passed" time="0.191489"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @SmokeTest @BoomTest
+  Scenario Outline:  -- @1.4 
+    Given I am on a http://demoqa.com/ page ... passed in 0.106s
+    When I click on the "Tab 4" button ... passed in 0.085s
+    Then A sub-page opens with the title "Content 4 Title" ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.homePageLinksAndTabs.Home page links and tabs" name=" -- @1.5 " status="passed" time="0.166106"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @SmokeTest @BoomTest
+  Scenario Outline:  -- @1.5 
+    Given I am on a http://demoqa.com/ page ... passed in 0.102s
+    When I click on the "Tab 5" button ... passed in 0.064s
+    Then A sub-page opens with the title "Content 5 Title" ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

@@ -22,7 +22,7 @@ Feature: Home page links and tabs
       | "Customer Support" |
       | "Very Flexible"    |
 
-  @NewOne @SmokeTest @BoomTest
+  @SmokeTest @BoomTest
   Scenario Outline:
     When I click on the "Tab <tabNumber>" button
     Then A sub-page opens with the title "<contentTitle>"

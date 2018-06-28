@@ -17,3 +17,10 @@ behave --junit
 
 # Don't print skipped scenarios
 behave -k
+
+select/enable	    --tags=@one	                    Only items with this tag.
+not (tilde/minus)	--tags=~@one	                Only items without this tag.
+logical-or	        --tags=@one,@two	            If @one or @two is present.
+logical-and	        --tags=@one --tags=@two	If      both @one and @two are present.
+
+behave --tags=@NewOne

@@ -1,0 +1,61 @@
+<testsuite errors="0" failures="0" hostname="DESKTOP-N352V7D" name="Features.Registration.Registration" skipped="0" tests="2" time="10.694988" timestamp="2018-06-28T10:02:49.779666"><testcase classname="Features.Registration.Registration" name="Fill in form with given data -- @1.1 " status="passed" time="7.096318"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @NewOne
+  Scenario Outline: Fill in form with given data -- @1.1 
+    Given Go to a registration form by clicking on registration button on the home page. ... passed in 4.345s
+    Given Fill fields with 0 set of data ... passed in 0.005s
+      | first_name | last_name    | phone_number | username | email              | about_yourself             | password     | confirm_password | annotation                      |
+      | Mariuszek  | Nazarkiewicz | 66666666666  | barabasz | zielonka@gmail.com | tekscik                    | haselko@#$88 | haselko@#$88     | Error: Username already exists  |
+      | ziomal     | ziomalczyk   | 55566655566  | barabara | karczoch@gmail.com | a co byś chciał przeczytać | haselko@#$88 | haselko@#$88     | Thank you for your registration |
+    When Fill "first_name" field with given data ... passed in 0.105s
+    And Fill "last_name" field with given data ... passed in 0.120s
+    And Select martial status ... passed in 0.059s
+    And Select chosen hobbies ... passed in 0.159s
+    And Select country ... passed in 0.057s
+    And Select date of birth ... passed in 0.388s
+    And Fill "phone_number" field with given data ... passed in 0.115s
+    And Fill "username" field with given data ... passed in 0.115s
+    And Fill "email" field with given data ... passed in 0.158s
+    And Upload profile picture ... passed in 0.062s
+    And Fill "about_yourself" field with given data ... passed in 0.087s
+    And Fill "password" field with given data ... passed in 0.142s
+    And Fill "confirm_password" field with given data ... passed in 0.100s
+    And Click the "Submit" button ... passed in 1.079s
+    Then "annotation" will appear ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Features.Registration.Registration" name="Fill in form with given data -- @1.2 " status="passed" time="3.59867"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @NewOne
+  Scenario Outline: Fill in form with given data -- @1.2 
+    Given Go to a registration form by clicking on registration button on the home page. ... passed in 1.029s
+    Given Fill fields with 1 set of data ... passed in 0.003s
+      | first_name | last_name    | phone_number | username | email              | about_yourself             | password     | confirm_password | annotation                      |
+      | Mariuszek  | Nazarkiewicz | 66666666666  | barabasz | zielonka@gmail.com | tekscik                    | haselko@#$88 | haselko@#$88     | Error: Username already exists  |
+      | ziomal     | ziomalczyk   | 55566655566  | barabara | karczoch@gmail.com | a co byś chciał przeczytać | haselko@#$88 | haselko@#$88     | Thank you for your registration |
+    When Fill "first_name" field with given data ... passed in 0.112s
+    And Fill "last_name" field with given data ... passed in 0.104s
+    And Select martial status ... passed in 0.045s
+    And Select chosen hobbies ... passed in 0.167s
+    And Select country ... passed in 0.077s
+    And Select date of birth ... passed in 0.363s
+    And Fill "phone_number" field with given data ... passed in 0.111s
+    And Fill "username" field with given data ... passed in 0.121s
+    And Fill "email" field with given data ... passed in 0.152s
+    And Upload profile picture ... passed in 0.072s
+    And Fill "about_yourself" field with given data ... passed in 0.107s
+    And Fill "password" field with given data ... passed in 0.122s
+    And Fill "confirm_password" field with given data ... passed in 0.118s
+    And Click the "Submit" button ... passed in 0.892s
+    Then "annotation" will appear ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
